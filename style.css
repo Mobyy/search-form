@@ -1,0 +1,115 @@
+body {
+  background-image: linear-gradient(to right, #ccffff, white);
+}
+/*header dalis pries linija*/
+.greet {
+  border-bottom: 1px solid #dee2e6;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  max-width: 1400px !important;
+}
+#greet-john {
+  color: #001b48;
+  font-size: 20px;
+  font-weight: 500;
+}
+.log-out {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 1;
+  text-align: right;
+  padding-top: 5px;
+}
+.log-out:hover {
+  color: #e7719c;
+}
+.log-out:active {
+  color: #e7719c;
+}
+#log-out-icon {
+  color: #e7719c;
+  font-size: 25px;
+  position: absolute;
+  right: 60px;
+  top: 20px;
+}
+/*susirasti daktara tekstas*/
+#find-doctor {
+  color: #001b48;
+  max-width: 1430px;
+  padding-top: 30px;
+}
+/*proceduru pasirinkimas deze*/
+.insidebg {
+  background: #fefeff;
+  color: #001b48;
+  opacity: 1;
+  padding-top: 30px;
+  padding-bottom: 78px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  border-radius: 0.25rem !important;
+  padding-left: 15px;
+  margin-right: 47px;
+  margin-bottom: 83px;
+}
+#insidebg-container {
+  max-width: 1430px;
+  padding-top: 30px;
+  padding-right: 10px;
+}
+/*proceduros parinktys*/
+#procedure {
+  border-bottom: 1px solid #dee2e6;
+}
+/*kainos parinktys*/
+#customRange-label {
+  padding-bottom: 20px;
+  font-size: 16px;
+  opacity: 1;
+  font-weight: 500;
+}
+/*doc-experiance parinktys*/
+#doc-exp-row {
+  font-size: 14px;
+}
+/*apatines submit ir detailed search parinktys*/
+#search-button {
+  background-color: #00cbd5;
+  color: white;
+  width: 121px;
+  height: 42px;
+  display: block;
+}
+#search-button:hover {
+  background-color: #001b48;
+}
+/*submit ir detail search mygtukai*/
+#detail-search-icon {
+  padding-left: 12px;
+  color: #00aab3;
+}
+#detail-search-btn {
+  height: 42px;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 1;
+}
+#detail-search-btn:hover {
+  color: #00cbd5;
+}
+#add-req {
+  font-size: 14px;
+  margin-top: 32px;
+  display: none;
+}
+#add-req-label {
+  padding-left: 15px;
+  font-size: 16px;
+  opacity: 1;
+  font-weight: 500;
+}
+#labels-fonts {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 1;
+}

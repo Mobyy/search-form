@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bbc37fc7fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>uzduotis</title>
+  </head>
+  <body>
+    <!--header pries linija-->
+    <div class="container pl-0 pr-5 greet">
+      <div class="row">
+        <div class="pt-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+          <p id="greet-john">Hello, John!</p>
+        </div>
+        <div class="pt-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+          <i class="fas fa-sign-out-alt pr-3" id="log-out-icon"></i><p class="log-out">LOGOUT</p>
+        </div>
+      </div>
+    </div>
+    <!----------->
+    <!--susirasti daktara-->
+    <div class="container" id="find-doctor">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <h3>Find Doctor</h3>
+        </div>
+      </div>
+    </div>
+    <!--parinktys-->
+    <div class="container" id="insidebg-container">
+        <div class="insidebg">
+        <!--pasirinkti procedura-->
+        <div class="row pb-2" id="procedure">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <label for="formGroupExampleInput" id="labels-fonts">Select Your Procedure</label>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-4">
+          <!-- v1 -->
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <label for="formGroupExampleInput" id="labels-fonts">Procedure Type</label>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- v1  end. -->
+
+          <!-- v2 -->
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <label for="formGroupExampleInput" id="labels-fonts">Procedure Name</label>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- v2 end. -->
+
+          <!-- v3 -->
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <label for="formGroupExampleInput" id="labels-fonts">Sort By</label>
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--vietos parinktys-->
+        <label for="formGroupExampleInput" id="labels-fonts" style="padding-left: 15px;">Location</label>
+        <div class="row pt-3 align-items-center">
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <select class="custom-select">
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <select class="custom-select" id="location">
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <select class="custom-select" id="location">
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <select class="custom-select" id="location">
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                  <option selected>Select</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--price slider-->
+        <div class="row pt-3">
+          <div class=" col-xl-5 col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <label for="formGroupExampleInput" id="customRange-label">Price Range</label>
+                <input
+                  type="range"
+                  class="custom-range"
+                  id="customRange"
+                  name="points1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--doctor experiance-->
+        <label for="Doc-exp"  id="add-req-label">Doctor's Experiance</label>
+          <div class="row pt-3 align-items-center" id="doc-exp-row">
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <div class="form-check form-check-inline mb-3">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">0-5 years</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <div class="form-check form-check-inline mb-3"  id="box-design">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">5-10 years</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <div class="form-check form-check-inline mb-3"  id="box-design">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">10-15 years</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <div class="form-check form-check-inline mb-3"  id="box-design">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                  <label class="form-check-label" for="inlineCheckbox4">15 years and more</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <div class="form-check form-check-inline mb-3"  id="box-design">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                  <label class="form-check-label" for="inlineCheckbox5">all</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        <!--search ir more details mygtukai-->
+        <div class="row pt-5 align-items-center" id="search-btn-container">
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <button type="submit" class="btn" id="search-button">SEARCH</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group mb-3">
+                <button type="button" class="btn" id="detail-search-btn">Detailed Search<i class="fas fa-arrow-down" id="detail-search-icon"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="extrasearch" id="add-req">
+          <div class="row d-flex justify-content-evenly">
+            <!-- v1 -->
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <label for="formGroupExampleInput" id="labels-fonts">Date Range</label>
+                  <select class="custom-select">
+                    <option selected>Select</option>
+                    <option selected>Select</option>
+                    <option selected>Select</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!-- v1  end. -->
+
+            <!-- v2 -->
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <label for="formGroupExampleInput" id="labels-fonts">Languages</label>
+                  <select class="custom-select">
+                    <option selected>Select</option>
+                    <option selected>Select</option>
+                    <option selected>Select</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!-- v2 end. -->
+
+            <!-- v3 -->
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <label for="formGroupExampleInput" id="labels-fonts">Gender</label>
+                  <select class="custom-select">
+                    <option selected>Select</option>
+                    <option selected>Select</option>
+                    <option selected>Select</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Additional Requirements 1st row-->
+          <label for="Doc-exp" id="add-req-label">Additional Requirements</label>
+            <div class="row mr-0 align-items-center">
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline mb-3" id="box-design">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox6">This and that</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline mb-3" id="box-design">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox7">Something something</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-5 col-lg-7 col-md-12 col-sm-12 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline mb-3" id="box-design">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, cumque!</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline mb-3" id="box-design">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox9">Something something</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline mb-3" id="box-design">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox10">Something</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline mb-3" id="box-design">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox11">This for sure</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline mb-3" id="box-design">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox12">Something</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline mb-3" id="box-design">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox13">This for sure</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline mb-3" id="box-design">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox14">This for sure</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline mb-3" id="box-design">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox15">Something</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          <div class="row pt-4">
+            <div
+              class="col-xl-2 col-lg-4 col-md-4 col-sm-12 col-12"
+              id="search-btn-container"
+            >
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="form-group mb-3">
+                  <button type="submit" class="btn" id="search-button">
+                    SEARCH
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <script>
+      $(function(){
+            $("#search-btn-container").on('click',function() {
+                $(this).hide();
+                $("#add-req").show();
+            }); 
+        });
+
+    </script>
+  </body>
+</html>
